@@ -1,0 +1,74 @@
+
+
+.campground{
+  width: 100%;
+  max-width: 960px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  /* grid-template-columns: 1fr 1fr  1fr; */
+  
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+ 
+}
+
+/* @media(max-width:900px){
+  .campground{
+    grid-template-columns: 1fr 1f 1fr;
+  }
+  
+}
+@media(max-width:800px){
+  .campground{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+@media(max-width:550px){
+  .campground{
+    grid-template-columns: 1fr;
+  }
+  
+} */
+
+.campground .campground-container{
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.campground .campground-container img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.background{
+  width: 100%;
+  background-color: #dff9fb;
+}
+.campground .campground-info h4,
+.campground .campground-info p,
+.campground .campground-info button{
+  margin: 5px 0;
+  
+}
+
+.campground .campground-info button{
+  margin: 5px 0;
+  
+}
+
+.campground .campground-container {
+  display: flex;
+  flex-direction: column;
+ margin: 0 auto;
+ background-color: white;
+ padding: 1rem;
+  
+}

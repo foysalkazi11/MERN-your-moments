@@ -1,0 +1,14 @@
+.navStyle{
+  position:absolute;
+    top: 72px;
+    left: 0;
+    padding: 10px
+}
+
+.map{
+  width: 100%;
+  /* max-width: 960px; */
+  /* height: 300px; */
+  margin: 0 auto;
+  overflow-x: scroll;
+}

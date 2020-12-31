@@ -1,0 +1,28 @@
+.reviewDisplay{
+  margin: 1rem 0;
+  max-height: 35.5vh;
+ overflow-y: scroll;
+ background-color: white;
+ padding: 1rem;
+ border-radius: 5px ;
+  box-shadow: 0 0 2px  rgba(0, 0, 0, 0.5);
+ 
+}
+.reviewDisplay-container{
+  padding: 0 10px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.reviewDisplay-container button{
+  border: none;
+  outline-style: none;
+  color: gray;
+  cursor: pointer;
+  background-color: white;
+  text-decoration: underline;
+}
+.reviewDisplay-container h5{
+  margin-bottom: 5px;
+}

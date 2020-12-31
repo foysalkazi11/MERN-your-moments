@@ -1,0 +1,42 @@
+/* .rating-review-container{
+  border: 1px solid red;
+} */
+.reviw{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px ;
+  box-shadow: 0 0 2px  rgba(0, 0, 0, 0.5);
+}
+
+.reviw form .input-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+.reviw form .input-container,
+.reviw form .input-container button,
+.reviw form .input-container h5{
+  margin: 10px 0;
+  
+}
+
+.reviw form .input-container h4{
+  margin-bottom: 10px;
+  
+}
+.reviw form .input-container textarea{
+ padding: 5px;
+  
+}
+.reviw form  .icon-container{
+  display: flex;
+  flex-direction:row !important;
+  
+}
+
+.reviw .star{
+  margin: 0 2px;
+  cursor: pointer;
+  transition: .3s linear;
+  
+}
