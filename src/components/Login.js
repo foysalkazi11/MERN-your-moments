@@ -12,7 +12,7 @@ const Login = (props) => {
     error,
     isLoading
   } = useAuth();
-  const [loading, setloading] = useState(false);
+
   const [inputVlaue, setinputVlaue] = useState({
     username: "",
     password: ""

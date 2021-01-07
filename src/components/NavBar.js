@@ -3,11 +3,11 @@ import { withRouter, NavLink, Link } from "react-router-dom";
 import { useAuth } from "../context/authContext/AuthState";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { Loading } from "./Loading";
+
 // import { notification } from "../utility/notification";
 
 const NavBar = (props) => {
-  const { logoutUser, isAuthenticated, user, isLoading } = useAuth();
+  const { logoutUser, isAuthenticated, user } = useAuth();
   const [showlink, setshowlink] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 

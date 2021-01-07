@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import './nav.css';
 @import './home.css';
 @import './campGround.css';
@@ -43,6 +44,9 @@
 }
 body{
   color: var(--fontColor);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6rem;
+	font-weight: 300;
 }
 .loading{
   width: 100%;
@@ -107,6 +111,7 @@ body{
   transition: var(--transition);
   color: var(--fontWhite);
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 .btn:hover{
 background-color: var(--cp2color2);

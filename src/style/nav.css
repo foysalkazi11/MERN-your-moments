@@ -16,7 +16,8 @@
 .navbar .nav-container h1{
   color: var(--fontWhite);
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 300;
+  
  
 }
 @media(max-width:500px){
