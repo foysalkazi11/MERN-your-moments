@@ -11,7 +11,10 @@ const AddCampGround = (props) => {
     clearError,
     createCampGround
   } = useCamp();
-
+  useEffect(() => {
+    clearError();
+    //eslint-disable-next-line
+  }, []);
   useEffect(() => {
     if (createCamp && !isLoading && !error) {
       props.history.push("/campground");
@@ -100,8 +103,8 @@ const AddCampGround = (props) => {
     <section className="signup ">
       <div></div>
       <div className="signup-container">
-        {isLoading && <Loading loading={isLoading} size={100} />}
-        <h1>Create New Moment</h1>
+        {isLoading && !createCamp && <Loading loading={isLoading} size={100} />}
+        <h1>Create Your Moment</h1>
         <div className="underline"></div>
 
         <form onSubmit={handleSubmit} encType="multipart/form-data">

@@ -49,7 +49,7 @@ const SignUp = (props) => {
         password: ""
       });
       if (props.location.state) {
-        props.history.push(`${props.location.state}`);
+        props.history.push(`${props.location.state.pathname}`);
       } else {
         props.history.push("/campground");
       }

@@ -53,7 +53,7 @@ const CampState = ({ children }) => {
       dispatch({ type: CREATE_CAMP, payload: res.data });
     } catch (error) {
       console.log(error.response);
-      dispatch({ type: ERROR_CAMP, payload: error.response.data });
+      dispatch({ type: ERROR_CAMP, payload: error.response.statusText });
     }
   };
 
