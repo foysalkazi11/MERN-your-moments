@@ -25,14 +25,14 @@ const AddCampGround = (props) => {
 
   const [state, setstate] = useState({
     title: "",
-    price: "",
+
     discription: "",
     location: ""
   });
   const [file, setfile] = useState("");
   const [inputValid, setinputValid] = useState({
     titleCheck: "",
-    priceCheck: "",
+
     imageCheck: "",
     discriptionCheck: "",
     locationCheck: ""
@@ -45,7 +45,7 @@ const AddCampGround = (props) => {
   };
   const validation = () => {
     let titleCheck = "";
-    let priceCheck = "";
+
     let imageCheck = "";
     let discriptionCheck = "";
     let locationCheck = "";
@@ -53,9 +53,7 @@ const AddCampGround = (props) => {
     if (!state.title) {
       titleCheck = "Please fill up title field";
     }
-    if (!state.price) {
-      priceCheck = "Please fill up price field";
-    }
+
     if (!file) {
       imageCheck = "Please fill up image field";
     }
@@ -65,18 +63,12 @@ const AddCampGround = (props) => {
     if (!state.location) {
       locationCheck = "Please fill up discripation field";
     }
-    if (
-      titleCheck ||
-      priceCheck ||
-      imageCheck ||
-      discriptionCheck ||
-      locationCheck
-    ) {
+    if (titleCheck || imageCheck || discriptionCheck || locationCheck) {
       setinputValid((pre) => {
         return {
           ...pre,
           titleCheck,
-          priceCheck,
+
           imageCheck,
           discriptionCheck,
           locationCheck
@@ -93,7 +85,7 @@ const AddCampGround = (props) => {
 
     formData.append("image", file);
     formData.append("title", state.title);
-    formData.append("price", state.price);
+
     formData.append("discription", state.discription);
     formData.append("location", state.location);
 
@@ -123,18 +115,6 @@ const AddCampGround = (props) => {
             />
             <p style={{ color: "red" }}>
               {inputValid.titleCheck && inputValid.titleCheck}
-            </p>
-          </div>
-          <div>
-            <label htmlFor="price">Price</label>
-            <input
-              type="number"
-              name="price"
-              value={state.price}
-              onChange={handleChange}
-            />
-            <p style={{ color: "red" }}>
-              {inputValid.priceCheck && inputValid.priceCheck}
             </p>
           </div>
 

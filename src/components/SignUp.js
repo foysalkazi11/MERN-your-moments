@@ -133,7 +133,7 @@ const SignUp = (props) => {
       <div></div>
       <div className="signup-container">
         {isLoading && <Loading loading={isLoading} />}
-        <h1>Create New Moment</h1>
+        <h1>Create New Account</h1>
         <div className="underline"></div>
         {props.location.state && (
           <p className="redirect-message">{`You must register first to do that`}</p>

@@ -17,15 +17,6 @@ const Login = (props) => {
     username: "",
     password: ""
   });
-  const [checkValue, setcheckValue] = useState({
-    validusername: "",
-    validpassword: ""
-  });
-
-  useEffect(() => {
-    handleVlidate();
-    //eslint-disable-next-line
-  }, [inputVlaue]);
 
   useEffect(() => {
     if (isAuthenticated && !isLoading) {
@@ -55,32 +46,6 @@ const Login = (props) => {
   };
 
   const handleVlidate = () => {
-    if (inputVlaue.username) {
-      setcheckValue((pre) => {
-        return { ...pre, validusername: "looks good" };
-      });
-    } else {
-      setcheckValue((pre) => {
-        return {
-          ...pre,
-          validusername: "please enter username"
-        };
-      });
-    }
-
-    if (inputVlaue.password) {
-      setcheckValue((pre) => {
-        return { ...pre, validpassword: "looks good" };
-      });
-    } else {
-      setcheckValue((pre) => {
-        return {
-          ...pre,
-          validpassword: "please enter password "
-        };
-      });
-    }
-
     if (!inputVlaue.username || !inputVlaue.password) {
       return false;
     }
@@ -90,7 +55,6 @@ const Login = (props) => {
     e.preventDefault();
     if (handleVlidate()) {
       loginUser(inputVlaue);
-      // setloading(true);
     } else {
       notification("error", "please enter both usernaem and password");
       clearError();
@@ -114,17 +78,6 @@ const Login = (props) => {
               value={inputVlaue.username}
               onChange={handleChange}
             />
-            {inputVlaue.username && (
-              <p
-                className={`${
-                  checkValue.validusername === "looks good"
-                    ? "valid"
-                    : "unvalid"
-                }`}
-              >
-                {checkValue.validusername}{" "}
-              </p>
-            )}
           </div>
 
           <div>
@@ -136,17 +89,6 @@ const Login = (props) => {
               value={inputVlaue.password}
               onChange={handleChange}
             />
-            {inputVlaue.password && (
-              <p
-                className={`${
-                  checkValue.validpassword === "looks good"
-                    ? "valid"
-                    : "unvalid"
-                }`}
-              >
-                {checkValue.validpassword}{" "}
-              </p>
-            )}
           </div>
           <div>
             <button type="submit" className="btn">
