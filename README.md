@@ -1,1 +1,1 @@
-### Demo link - https://your-moments-backend-production.up.railway.app/
+### Demo link - https://your-moments.netlify.app/
