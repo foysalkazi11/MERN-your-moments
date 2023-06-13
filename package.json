@@ -43,6 +43,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ],
-    "proxy": "https://your-moments-backend-production.up.railway.app"
+    "proxy": "https://your-moments-backend.onrender.com"
   }
 }
